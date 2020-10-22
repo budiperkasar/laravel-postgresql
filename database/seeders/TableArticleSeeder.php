@@ -20,7 +20,7 @@ class TableArticleSeeder extends Seeder
         for($x=1; $x<=20; $x++)
         {
             DB::table('articles')->insert([
-                'created_by' => $faker->numberBetween(1, 20),
+                'user_id' => $faker->numberBetween(1, 20),
                 'status' => $faker->numberBetween(0, 1),
                 'priority' => $faker->numberBetween(1, 20),
                 'title' => $faker->sentence(5),
